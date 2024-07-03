@@ -31,6 +31,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2e0ab110-e363-48a8-be82-37b8d7154ee7"
+      }
+    },
+    "owner": "dhananjayahlawat"
   }
 }
