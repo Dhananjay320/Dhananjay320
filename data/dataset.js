@@ -10,17 +10,17 @@ const categorylist = [
     { title: "sports" },
     { title: "technology" },
   ];
-  constlist  = [
+  const countrylist  = [
     { title: "National" },
     { title: "Internationa" }
   ];
 export const Dataset = ({country,keyword,categary}) => {
 return(
     <View>
-        <Search/>
-        <View>
-            <ItemListDropdown/>
-            <ItemListDropdown/>
+       {/* <Search/> */}
+        <View style = {{flexDirection : 'row',alignItems:'center'}}>
+            <ItemListDropdown items={categorylist} buttonTitle="categary" dataset ={categary}/>
+            <ItemListDropdown items={countrylist} buttonTitle="National" dataset={country}/>
         </View>
     </View>
 );
