@@ -1,5 +1,6 @@
 import React ,{useRef,useState, useEffect } from 'react';
 import { View, Text} from 'react-native';
+import {Search} from './search' ;
 import ItemListDropdown from './buttonlist';
 const categorylist = [
     { title: "general" },
@@ -14,12 +15,12 @@ const categorylist = [
     { title: "National" },
     { title: "Internationa" }
   ];
-export const Dataset = ({country,keyword,categary}) => {
+export const Dataset = ({country,keyword,category}) => {
 return(
     <View>
-       {/* <Search/> */}
+         <Search onSearch={keyword} />
         <View style = {{flexDirection : 'row',alignItems:'center'}}>
-            <ItemListDropdown items={categorylist} buttonTitle="categary" dataset ={categary}/>
+            <ItemListDropdown items={categorylist} buttonTitle="category" dataset ={category}/>
             <ItemListDropdown items={countrylist} buttonTitle="National" dataset={country}/>
         </View>
     </View>

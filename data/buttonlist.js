@@ -14,6 +14,7 @@ const ItemListDropdown = ({ items, buttonTitle,dataset}) => {
 
   const handleSelectItem = (item) => {
     setSelectedItem(item.title);
+    dataset(item.title);
     toggleList();
   };
 
