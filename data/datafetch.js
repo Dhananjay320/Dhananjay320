@@ -20,7 +20,7 @@ export const Data = ({ keyword = '', category = '', nationality, storeData }) =>
     if (category) {
       tempUrl += (tempUrl.includes('?') ? '&' : '?') + `category=${category}`;
     }
-    tempUrl += (tempUrl.includes('?') ? '&' : '?') + `language=en&apiKey=494fb959206e4f1c8e35cdc105241937`;
+    tempUrl += (tempUrl.includes('?') ? '&' : '?') + `apiKey=494fb959206e4f1c8e35cdc105241937`;
     setUrl(tempUrl);
   }, [keyword, category, nationality]);
 
